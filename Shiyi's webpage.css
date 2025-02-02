@@ -43,23 +43,6 @@ h1 {
     color: black;
 }
 
-.hidden {
-    display: none;
-}
-
-#photogallery {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#photogallery img {
-    max-width: 80%; /* 图片最大宽度为80% */
-    height: auto;
-    border-radius: 10px; /* 圆角 */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* 添加阴影 */
-    margin: 10px;
-}
-
 footer {
     text-align: center;
     padding: 10px;
