@@ -12,35 +12,15 @@ body {
      margin-bottom: 20px; /* 添加底部外边距 */
     }
 
-.image_2{
+.image_2, .image_3,.image_4{
     display: block;  /* 图片显示为块级元素 */
-    margin:0 auto; /* 图片居中显示 */
-    max-width:5%; /* 使图片在父元素内自适应宽度 */
-    max-height:100px; /* 图片最大高度为300像素 */
+    margin:20px auto; /* 图片居中显示 */
+    max-width:80%; /* 图片最大宽度为屏幕的80% */
     height:auto; /* 高度自适应 */
-    width:auto; /* 宽度自适应 */
-    flex-wrap:;
-    }
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2) /*轻微阴影*/
 
-.image_3{
-        display: block;  /* 图片显示为块级元素 */
-        margin:0 auto; /* 图片居中显示 */
-        max-width:5%; /* 使图片在父元素内自适应宽度 */
-        max-height:100px; /* 图片最大高度为300像素 */
-        height:auto; /* 高度自适应 */
-        width:auto; /* 宽度自适应 */
-        flex-wrap:;
-        }
-    
-.image_4{
-        display: block;  /* 图片显示为块级元素 */
-        margin:0 auto; /* 图片居中显示 */
-        max-width:5%; /* 使图片在父元素内自适应宽度 */
-        max-height:100px; /* 图片最大高度为300像素 */
-        height:auto; /* 高度自适应 */
-        width:auto; /* 宽度自适应 */
-        flex-wrap: ;
-        }
+    }
     
 header {
     text-align: center;
