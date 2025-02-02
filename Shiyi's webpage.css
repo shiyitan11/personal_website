@@ -22,6 +22,23 @@ body {
     flex-wrap: ;
     }
 
+.image_3{
+        display:block; /* 防止图片底部出现空白 */
+        margin:0 auto; /* 居中图片 *//* 边距 */
+        max-width:100%; /* 使图片在父元素内自适应宽度 */
+        margin-top: 20px; /* 添加顶部外边距 */
+         margin-bottom: 20px; /* 添加底部外边距 */
+        }
+    
+.image_4{
+        display: block;  /* 图片显示为块级元素 */
+        margin:0 auto; /* 图片居中显示 */
+        max-width:5%; /* 使图片在父元素内自适应宽度 */
+        max-height:100px; /* 图片最大高度为300像素 */
+        height:auto; /* 高度自适应 */
+        width:auto; /* 宽度自适应 */
+        flex-wrap: ;
+        }
     
 header {
     text-align: center;
