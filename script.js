@@ -13,7 +13,8 @@ function showContent(id) {
 /* ========= Photo Slider Functionality =========*/
 // Make sure the DOM is fully loaded before running the slider code.
 document.addEventListener("DOMContentLoaded", function() {
-  // Select the next-button element.
+  // Select both the prev-button and next-button element.
+  const prevButton = document.querySelector('.prev-button');
   const nextButton = document.querySelector('.next-button');
   // Select all images that have the class "image_gallery".
   const images = document.querySelectorAll('.image_gallery');
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       images[currentIndex].classList.add('active');
     });
   }
-  
+
   //On click, show the previous image.
   if (nextButton) {
     nextButton.addEventListener('click', function() {

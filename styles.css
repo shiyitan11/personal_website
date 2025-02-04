@@ -125,7 +125,7 @@ footer {
     user-select: none; /* Prevent text selection on click */
 }
 .prev-button{
-    left: 10px
+    left: 10px;
 }
 
 .next-button{
