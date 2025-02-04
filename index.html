@@ -8,7 +8,7 @@
     <meta name="description" content="Shiyi Tan - Personal Website">
 
     <title>Unknown Land</title>
-    <link rel="stylesheet" href="Shiyi's webpage.css">
+    <link rel="stylesheet" href="css/Shiyi's webpage.css">
 </head>
 
 <body>
@@ -42,9 +42,11 @@
 
         <div id="photogallery" class="hidden">
             <h3>My Photo Gallery</h3>
-            <img src="23_11_23.jpg" alt="photo2" class="image_gallery">
-            <img src="25_02_02sunset.jpg" alt="photo3" class="image_gallery">
-            <img src="25_02_01cheesecake.jpg" alt="photo4" class="image_gallery">
+            <img src="23_11_23.jpg" alt="photo2" class="image_gallery active">
+            <img src="25_02_02.jpg" alt="photo3" class="image_gallery">
+            <img src="25_02_01.jpg" alt="photo4" class="image_gallery">
+            <div class="prev-button">&#9664</div>
+            <div class="next-button">&#9654</div>
         
         </div>
     
@@ -54,19 +56,11 @@
         <p class="intro-text">I am Shiyi. You can also find me on <a href="https://twitter.com/ShiyiTan2" title="Shiyi's Twitter" target="_blank">Twitter</a> and <a href="https://www.linkedin.com/in/shiyi-tan-188800239/" title="Shiyi's LinkedIn" target="_blank">LinkedIn</a>. This webpage is used to record my life and study. Hope I could update something here everyday.</p>
     </div>
 
-    <script>
-        function showContent(id) {
-            var contents = document.getElementsByClassName('content');
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = 'none';
-            }
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
     <footer>
-        &copy; 2023-2025 Shiyi Tan - Enjoy every moment
+        &copy; 2025 Shiyi Tan - Enjoy every moment
     </footer>
 
 

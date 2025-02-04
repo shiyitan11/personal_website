@@ -57,7 +57,10 @@ footer {
     padding: 20px;
 }
 
-/* 隐藏 checkbox */
+.hidden {
+    display:none;
+}
+
 .hidden-checkbox {
     display: none;
 }
@@ -98,4 +101,40 @@ footer {
 /* 显示相册（当 checkbox 被选中时） */
 #togglephotos:checked + .toggle-label + #photogallery {
     display: block;
+}
+
+.image_gallery {
+    display: none;
+}
+
+.image_gallery.active {
+    display: block;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    user-select: none; /* Prevent text selection on click */
+}
+.prev-button{
+    left: 10px
+}
+
+.next-button{
+    right:10px;
+}
+
+/*ensure the photogallery container positions the next-button correctly*/
+#photogallery{
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
 }
