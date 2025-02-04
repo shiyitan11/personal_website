@@ -21,25 +21,27 @@ document.addEventListener("DOMContentLoaded", function() {
   // Variable to keep track of the currently active image index.
   let currentIndex = 0;
 
-  //On click, show the previous image.
-  if (prevButton) {
-    prevButton.addEventListener('click', function() {
-      images[currentIndex].classList.remove('active');
-      // Use modulo arithmetic to loop backwards; adding images.length avoids negative values.
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      images[currentIndex].classList.add('active');
-    });
+  // Function to update which image is visible
+  function updateGallery() {
+    // Hide all images
+    images.forEach((image) => image.classList.remove('active'));
+    // Show only the current image
+    images[currentIndex].classList.add('active');
   }
 
-  //On click, show the previous image.
-  if (nextButton) {
-    nextButton.addEventListener('click', function() {
-      // Remove the "active" class from the current image.
-      images[currentIndex].classList.remove('active');
-      // Increment the index (use modulus to wrap back to 0 after the last image).
-      currentIndex = (currentIndex + 1) % images.length;
-      // Add the "active" class to the new current image.
-      images[currentIndex].classList.add('active');
-    });
-  }
+  // Event listener for the "next" button
+  nextButton.addEventListener('click', function () {
+    // Move to the next image, looping back to the start if needed
+    currentIndex = (currentIndex + 1) % images.length;
+    updateGallery();
+  });
+
+  // Event listener for the "previous" button
+  prevButton.addEventListener('click', function () {
+    // Move to the previous image, looping to the end if needed
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateGallery();
+  });
+  updateGallery();
+  
 });
