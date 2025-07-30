@@ -23,19 +23,25 @@ h1 {
 
 .navbar {
     background-color: #008080;
-    overflow: hidden;
+    position: fixed; /* 固定在顶部 */
+    top:0;
+    right: 0;
+    padding: 10px 30px; /* 增加顶部和底部的内边距 */
     display: flex;            /* 添加flex布局 */
-    justify-content: center;  /* 水平居中 */
+    justify-content: fixed-end;  /* 水平居中 */
     align-items: center;      /* 垂直居中 */
+    z-index: 1000; /* 确保导航栏在最上层 */
+    border-bottom-left-radius: 10px; 
 }
 
 .navbar a {
-    display: block;/*确保显示*/
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    margin: 0 50px; /* 增加左右外边距 */
+    margin: 0 10px; /* 缩小间距让它更紧凑 */
+    font-weight: bold;
 } 
 
 .navbar a:hover {
